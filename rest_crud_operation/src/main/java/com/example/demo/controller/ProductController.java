@@ -28,7 +28,7 @@ public class ProductController {
 	@PostMapping("/create")
 	public ResponseEntity<String> createProduct(@RequestBody Product product) {
 		Integer id = iProductService.saveProduct(product);
-		String message = "Product with id " + id + " created!...";
+		String message = "Product with id " + id + " created!..";
 		return new ResponseEntity<String>(message, HttpStatus.CREATED);
 	}
 
